@@ -3,6 +3,10 @@
     color: #E95A08;
 }
 
+.pad {
+    padding: 0 10px;
+}
+
 /* Navigation Bar */
 .nav {
     display: flex;
@@ -123,12 +127,61 @@
     transition: background-color 0.3s ease, transform 0.2s ease;
 
 }
+
 .plant-Card button:hover {
-    background-color: #c94c06;  
-    transform: scale(1.05);     
+    background-color: #c94c06;
+    transform: scale(1.05);
 }
 
-/*Mobile Banner Style */
+/* Plants lover section */
+
+.plantlover {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 100px;
+    height: 600px;
+}
+
+.pl-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+#mainimg {
+    width: 100%;
+    height: auto;
+}
+
+#badge {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: -100px;
+    left: -200px;
+}
+
+.text-desktop {
+    font-size: 22px;
+    color: #8987A1;
+}
+
+.text-mobile {
+    display: none;
+}
+
+.textt-desktop {
+    display: block;
+}
+.textt-mobile {
+    display: none;
+}
+
+
+
+
+
+/*Mobile Style */
 
 @media (max-width: 576px) {
     .banner {
@@ -169,5 +222,47 @@
         gap: 20px;
         width: 100%;
     }
-    
+
+
+    /*Plant Lover Section */
+
+    .plantlover {
+        flex-direction: column;
+        align-items: center;
+        margin: 15px 20px;
+        height: auto;
+    }
+
+    .pl-img {
+        width: 100%;
+        height: auto;
+    }
+
+    #mainimg {
+        width: 100%;
+        height: auto;
+    }
+
+    #badge {
+        display: none;
+    }
+
+    .text-desktop {
+        display: none;
+
+    }
+
+    .text-mobile {
+        display: inline;   /* show mobile text */
+        font-size: 14px;
+        color: #8987A1;
+    }
+    .textt-desktop {
+        display: none;
+    }
+    .textt-mobile {
+        display: block;
+        font-size: 24px;
+    }
+
 }
