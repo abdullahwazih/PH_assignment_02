@@ -137,8 +137,9 @@
 
 .plantlover {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 100px 100px;
+
     height: 600px;
 }
 
@@ -173,20 +174,242 @@
 .textt-desktop {
     display: block;
 }
+
 .textt-mobile {
     display: none;
 }
 
 
+/* Latest Deals Section */
+.text-desktop {
+    display: block;
+}
+
+.text-mobile {
+    display: none;
+}
+
+.latestdeals {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    height: 400px;
+    margin: auto 100px;
+}
+
+.dealsleft {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 40%;
+    height: 100%;
+}
+
+.bloomplant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assets/deal-bloom.png');
+    filter: brightness(80%);
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+
+}
+
+.anaplant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assets/deal-ana.png');
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    filter: brightness(80%);
+}
+
+.dealsright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background-image: url('assets/deal-zabo.png');
+    filter: brightness(80%);
+    background-size: cover;
+    border-radius: 10px;
+    height: auto;
+}
+
+.left-textstyle {
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0px;
+}
+
+.right-textstyle {
+    color: white;
+    font-size: 4rem;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0px;
+}
 
 
+.text-desktop-padding {
+    padding-bottom: 20px;
+}
+
+/* Join Section */
+
+.join {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url('assets/news-letter-bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    margin: 80px 0 0 0;
+
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.jointitle {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: white;
+    margin: 10px;
+}
+
+.joinfield {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.joinfield input {
+    width: 500px;
+    height: 50px;
+}
+
+.joinfield button {
+    background-color: #E95A08;
+    border: none;
+    margin: 0px;
+    color: white;
+    width: 200px;
+    height: 50px;
+}
+
+.joinfield button {
+    background-color: #E95A08;
+    border: none;
+    margin: 0px;
+    color: white;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.joinfield button:hover {
+    background-color: #c94c06;
+    transform: scale(1.05);
+}
+
+
+/* Footer */
+
+.footer-style {
+    display: flex;
+    justify-content: space-around;
+    height: 350px;
+    background-color: whitesmoke;
+    align-items: center;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.footer1 img {
+    width: 135px;
+    height: auto;
+    max-width: 100%;
+}
+
+
+.f1text {
+    font-size: 1.375rem;
+    font-weight: bolder;
+    color: #8987A1;
+}
+
+.foot2_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.foot2_1 a {
+    display: block;
+    text-decoration: none;
+    color: #8987A1;
+}
+
+
+
+.footer3 {
+    display: flex;
+    gap: 20px;
+
+}
+
+.f3img {
+    padding-top: 50px;
+    width: 30px;
+    height: 30px;
+}
+
+.footer2-text {
+    font-size: 1rem;
+}
+
+.text-desktop {
+    display: block;
+}
+
+.text-mobile {
+    display: none;
+}
 
 /*Mobile Style */
+
+
 
 @media (max-width: 576px) {
     .banner {
         flex-direction: column-reverse;
-        padding: 20px;
+        padding: 20px 0px;
     }
 
     .banner_img img {
@@ -206,7 +429,7 @@
 
     .plant h1 {
         font-size: 24px;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
 
     .sub-text {
@@ -231,6 +454,7 @@
         align-items: center;
         margin: 15px 20px;
         height: auto;
+        padding-bottom: 70px;
     }
 
     .pl-img {
@@ -253,16 +477,117 @@
     }
 
     .text-mobile {
-        display: inline;   /* show mobile text */
+        display: inline;
         font-size: 14px;
         color: #8987A1;
     }
+
     .textt-desktop {
         display: none;
     }
+
     .textt-mobile {
         display: block;
         font-size: 24px;
     }
+
+
+    /* Latest Deal */
+
+
+    .text-desktop {
+        display: none;
+    }
+
+    .text-mobile {
+        display: block;
+    }
+
+
+    .latestdeals {
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 20px;
+        row-gap: 20px;
+    }
+
+    .dealsleft,
+    .dealsright {
+        width: 100%;
+        height: 50%;
+    }
+
+    .anaplant {
+        border-radius: 0px;
+    }
+
+    .left-textstyle {
+        font-size: 1.5rem;
+    }
+
+    .right-textstyle {
+        font-size: 1.2rem;
+    }
+
+
+    /* Join */
+
+    .join {
+        height: 200px;
+    }
+
+    .joinfield {
+        height: 30px;
+    }
+
+    .jointitle {
+        font-size: 2rem;
+    }
+
+    .joinfield input {
+        width: 200px;
+        height: 30px;
+    }
+
+    .joinfield button {
+        width: 80px;
+        height: 30px;
+    }
+
+    /* Footer */
+
+    .text-desktop {
+        display: none;
+    }
+
+    .text-mobile {
+        display: block;
+    }
+
+    .footer-style {
+        padding-left: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 800px;
+        background-color: whitesmoke;
+    }
+
+    .footer2-text {
+        font-size: 1rem;
+
+    }
+
+    .foot2_1_1 {
+        margin-bottom: 20px;
+    }
+
+    .f1text {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #8987A1;
+    }
+
 
 }
